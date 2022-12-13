@@ -1,18 +1,14 @@
-import React from 'react'
-import { Section } from './styled'
-import Welcome from '../Welcome'
-import About from '../About'
-import Services from "../Services"
+import React from 'react';
+import Footer from "../Footer"
+import StyledMainContainer from "../StyledMainContainer"
+import { Container } from './style'
 
-function MainContent({ page }) {
-
-    console.log(page)
+const MainContent = () =>  {
     return (
-        <Section>
-            {page === "home" && <Welcome />}
-            {page === "about" && <About />}
-            {page === "services" && <Services />}
-        </Section>
+        <Container>
+            <StyledMainContainer />
+            <Footer />
+        </Container>
     )
 }
 

@@ -1,70 +1,96 @@
 import styled from "styled-components";
-import { Solid, Text } from "../colors";
+import { Font, Text } from "../colors";
 
-export const Section = styled.div`
-    background-color: ${Solid.black900};
-    min-height: 100vh;
-    display: flex;
-    /* width: 100%; */
-    top: 0;
-    padding: 0 2rem;
+export const Section = styled.section`
+display: flex;
+-moz-box-pack: center;
+justify-content: center;
+-moz-box-align: center;
+flex-direction: column;
+align-items: flex-start;
+min-height: 100vh;
+height: 100vh;
+padding: 0px;
+padding: 100px 150px 0px 150px;
 `;
 
-export const Container = styled.div`
-    background-color: ${Solid.black900};
-    margin: auto;
-    display: flex;
-    gap: 4rem;
-`;
-export const Row = styled.div`
-    display: flex;
-`;
-export const HomeInfo = styled.div`
-    padding: 0 2rem;
-    background-color: red;
-    
-`;
-export const HelloTitle = styled.h3`
-    font-size: 1.5rem;
-    margin: 1rem 0;
-    color: ${Text.grey100};
-`;
-export const Profession = styled.h3`
-    font-size: 1.5rem;
-    margin: 1rem 0;
-    color: ${Text.grey100};
-`;
-export const Name = styled.span`
-    font-size: 2rem;
-    font-weight: 700;
-    color: green;
-`;
-export const Typing = styled.span`
-    color: green;
-`;
-export const HomeImage = styled.div`
-    &:after {
+export const Title = styled.h2`
+display: flex;
+-moz-box-align: center;
+align-items: center;
+position: relative;
+margin: 10px 0px 40px;
+width: 100%;
+font-size: clamp(26px,5vw,32px);
+white-space: nowrap;
 
+font-weight: 600;
+color: ${Text.grey100};
+line-height: 1.1;
+
+&:after{
+    content: "";
+display: block;
+position: relative;
+top: 5px;
+width: 300px;
+height: 1px;
+margin-left: 20px;
+background-color: ${Text.grey100};
+}
+
+`;
+
+export const MainContent = styled.div`
+    display: flex;
+    gap: 5rem;
+    width: 100%;
+`;
+
+export const ContentText = styled.div`
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    p {
+        color: ${Text.grey100};
+        margin: 0;
+    }
+`;
+export const ContentPic = styled.div`
+    width: 40%;
+`;
+
+export const Skills = styled.ul`
+gap: 0px 10px;
+padding: 0px;
+overflow: hidden;
+list-style: none;
+
+display: grid;
+grid-template-columns: repeat(2, minmax(140px, 200px));
+`;
+
+export const Skill = styled.li`
+position: relative;
+margin-bottom: 10px;
+padding-left: 20px;
+font-family: ${Font.fontMono};
+font-size: 13px;
+color: ${Text.grey100};
+
+    &:before {
+        content: "▹";
+        position: absolute;
+        left: 0px;
+        color: ${Text.green500};
+        font-size: 14px;
+        line-height: 12px;
     }
 `;
 
-export const Description = styled.p`
-    font-size: 1.5rem;
-    color: ${Text.grey100};
-`;
+export const PicContainer = styled.div`
 
-export const AboutMe = styled.button`
-    font-weight: 500;
-    padding: 1rem 2rem;
-    background-color: green;
-    color: white;
-    border-radius: 2.5rem;
-    border: 2px solid white;
-    cursor: pointer;
-    border: none;
-
-    transition: all 0.3s ease;
-    &:hover {
-        transform: scale(1.05);
-    }
 `;

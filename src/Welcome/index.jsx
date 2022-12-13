@@ -1,24 +1,23 @@
 import React from 'react'
-import { Section, Container, Row, HomeInfo, HelloTitle, Name, Profession, Typing, HomeImage, Description, AboutMe } from './style'
+import { Section, HelloMessageContainer, HelloMessage, NameContainer,Name, TitleContainer, Title, SubTitleContainer, SubTitle  } from './style'
 
-function Welcome() {
-    return (
-        <Section>
-            <Container>
-                <Row>
-                    <HomeInfo>
-                        <HelloTitle>Bonjour, je suis <Name>Cyril Delvalle</Name></HelloTitle>
-                        <Profession>Je suis <Typing>web designer</Typing></Profession>
-                        <Description>Passionné par le développement web, je vous propse mes services en tant que développeur et intégrateur web.</Description>
-                        <AboutMe href="">En savoir plus</AboutMe>
-                    </HomeInfo>
-                    <HomeImage>
-                        <img style={{ width: 300, height: 400 }} src={require("../assets/profil.jpg")} alt="" />
-                    </HomeImage>
-                </Row>
-            </Container>
-        </Section>
-    )
+const Welcome = () => {
+  return (
+    <Section id='welcome'>
+      <HelloMessageContainer>
+        <HelloMessage>Bonjour, je suis</HelloMessage>
+      </HelloMessageContainer>
+      <NameContainer>
+        <Name>Cyril Delvalle</Name>
+      </NameContainer>
+      <TitleContainer>
+        <Title>Développeur web</Title>
+      </TitleContainer>
+      <SubTitleContainer>
+        <SubTitle>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</SubTitle>
+      </SubTitleContainer>
+    </Section>
+  )
 }
 
 export default Welcome

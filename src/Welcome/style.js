@@ -1,68 +1,63 @@
 import styled from "styled-components";
-import { Solid, Text } from "../colors";
+import { Font, Text } from "../colors";
 
-export const Section = styled.div`
-    background-color: ${Solid.black900};
-    min-height: 100vh;
-    display: flex;
-    /* width: 100%; */
-    top: 0;
-    padding: 0 2rem;
-`;
-
-export const Container = styled.div`
-    background-color: ${Solid.black900};
-    margin: auto;
-    display: flex;
-    gap: 4rem;
-`;
-export const Row = styled.div`
-    display: flex;
-`;
-export const HomeInfo = styled.div`
-    padding: 0 2rem;
-`;
-export const HelloTitle = styled.h3`
-    font-size: 1.5rem;
-    margin: 1rem 0;
-    color: ${Text.grey100};
-`;
-export const Profession = styled.h3`
-    font-size: 1.5rem;
-    margin: 1rem 0;
-    color: ${Text.grey100};
-`;
-export const Name = styled.span`
-    font-size: 2rem;
-    font-weight: 700;
-    color: green;
-`;
-export const Typing = styled.span`
-    color: green;
-`;
-export const HomeImage = styled.div`
-    &:after {
-
-    }
+export const Section = styled.section`
+display: flex;
+-moz-box-pack: center;
+justify-content: center;
+-moz-box-align: center;
+flex-direction: column;
+align-items: flex-start;
+min-height: 100vh;
+height: 100vh;
+padding: 0px;
+padding: 0px 150px 0px 150px;
 `;
 
-export const Description = styled.p`
-    font-size: 1.5rem;
-    color: ${Text.grey100};
+export const HelloMessageContainer = styled.div`
+transition-delay: 100ms;
+`;
+export const NameContainer = styled.div`
+transition-delay: 200ms;
 `;
 
-export const AboutMe = styled.button`
-    font-weight: 500;
-    padding: 1rem 2rem;
-    background-color: green;
-    color: white;
-    border-radius: 2.5rem;
-    border: 2px solid white;
-    cursor: pointer;
-    border: none;
+export const TitleContainer = styled.div`
+transition-delay: 300ms;
+`;
 
-    transition: all 0.3s ease;
-    &:hover {
-        transform: scale(1.05);
-    }
+export const SubTitleContainer = styled.div`
+transition-delay: 400ms;
+`;
+
+export const HelloMessage = styled.h1`
+margin: 0px 0px 30px 4px;
+color: ${Text.green500};
+font-family: ${Font.fontMono};
+font-size: clamp(14px,5vw,16px);
+font-weight: 400;
+`;
+
+export const Name = styled.h2`
+margin: 0px;
+font-size: clamp(40px, 8vw, 80px);
+font-weight: 600;
+color: ${Text.grey200};
+line-height: 1.1;
+font-family: ${Font.fontSans};
+`;
+
+export const Title = styled.h3`
+margin-top: 5px;
+color: ${Text.slate};
+line-height: 0.9;
+font-size: clamp(40px, 8vw, 80px);
+font-family: ${Font.fontSans};
+margin: 0;
+`;
+
+export const SubTitle = styled.p`
+margin: 40px 0px 0px;
+color: ${Text.slate};
+font-family: ${Font.fontSans};
+max-width: 480px;
 `;

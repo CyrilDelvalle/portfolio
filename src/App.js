@@ -1,8 +1,7 @@
 import './App.css';
 import MainContainer from './MainContainer';
 
-function App() {
-  console.log('test')
+const App = () =>  {
   return (
     <div className="App">
       <MainContainer />
