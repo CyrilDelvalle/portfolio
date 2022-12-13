@@ -2,6 +2,7 @@ import './App.css';
 import MainContainer from './MainContainer';
 
 function App() {
+  console.log('test')
   return (
     <div className="App">
       <MainContainer />
