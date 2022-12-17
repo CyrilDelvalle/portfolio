@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Font, Text } from "../colors";
+import { Font, Text } from "../utils";
 
 export const Section = styled.section`
 display: flex;

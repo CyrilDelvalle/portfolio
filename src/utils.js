@@ -6,9 +6,11 @@ export const Solid = {
 
 export const Text = {
     grey100: "#f3f4f6",
-    green500: "#10b981",
+    green100: "#41b697",
+    green500: "#158869",
     grey200: "#ccd6f6",
-    slate: "#8892b0"
+    slate: "#8892b0",
+    lightSlate: '#ccd6f6'
 }
 
 export const Font = {

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Solid, Text } from "../colors";
+import { Font, Text } from "../utils";
 
 export const Container = styled.main`
     /* padding: 0px 150px; */

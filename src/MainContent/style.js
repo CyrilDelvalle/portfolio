@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Solid, Text } from "../colors";
+import { Solid, Text } from "../utils";
 
 export const Container = styled.div`
     background-color: ${Solid.black900};

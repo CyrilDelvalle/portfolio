@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Solid, Text } from "../colors";
+import { Solid, Text } from "../utils";
 
 export const Container = styled.header`
     height: 6rem;
@@ -8,8 +8,13 @@ export const Container = styled.header`
     align-items: center;
     position: fixed;
     top: 0px;
-    border-bottom: 0.5px solid white;
     display: flex;
+
+    filter: none !important;
+    pointer-events: auto !important;
+    user-select: auto !important;
+    backdrop-filter: blur(10px);
+    transition:  all 0.25s cubic-bezier(0.645,0.045,0.355,1);
 `;
 
 
@@ -37,11 +42,13 @@ export const Links = styled.div`
     align-items: center;
 `;
 
-export const Link = styled.li`
+export const LinkLi = styled.li`
     margin: 0px 0.5rem;
     font-size: 14px;
     font-size: 20px;
     line-height: 1.3;
+
+    cursor: pointer;
 `;
 
 export const LinksContainer = styled.ol`

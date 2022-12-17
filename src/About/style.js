@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Font, Text } from "../colors";
+import { Font, Text } from "../utils";
 
 export const Section = styled.section`
 display: flex;
@@ -55,7 +55,7 @@ export const ContentText = styled.div`
     gap: 1rem;
 
     p {
-        color: ${Text.grey100};
+        color: ${Text.slate};
         margin: 0;
     }
 `;
@@ -79,7 +79,7 @@ margin-bottom: 10px;
 padding-left: 20px;
 font-family: ${Font.fontMono};
 font-size: 13px;
-color: ${Text.grey100};
+color: ${Text.slate};
 
     &:before {
         content: "▹";

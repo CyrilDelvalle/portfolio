@@ -1,35 +1,66 @@
-import React from 'react'
-import { Section, Title, MainContent ,ContentPic, ContentText, Skills, Skill, PicContainer} from './style'
+import React from "react";
+import {
+  Section,
+  Title,
+  MainContent,
+  ContentPic,
+  ContentText,
+  Skills,
+  Skill,
+  PicContainer,
+} from "./style";
 
-const skills = ["Javascript", "React", "Node.js", "Typescript", "Tailwind", "CSS"]
+const skills = [
+  "Javascript",
+  "React",
+  "Node.js",
+  "Typescript",
+  "Tailwind",
+  "CSS",
+];
 
 const About = () => {
   return (
-    <Section id='about'>
+    <Section id="about">
       <Title>A propos</Title>
       <MainContent>
         <ContentText>
-          <p>Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</p>
-          <p>Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.</p>
-          <p>I also recently launched a course that covers everything you need to build a web app with the Spotify API using Node & React.</p>
+          <p>
+            Hello! My name is Brittany and I enjoy creating things that live on
+            the internet. My interest in web development started back in 2012
+            when I decided to try editing custom Tumblr themes — turns out
+            hacking together a custom reblog button taught me a lot about HTML &
+            CSS!
+          </p>
+          <p>
+            Fast-forward to today, and I’ve had the privilege of working at an
+            advertising agency, a start-up, a huge corporation, and a
+            student-led design studio. My main focus these days is building
+            accessible, inclusive products and digital experiences at
+            Upstatement for a variety of clients.
+          </p>
+          <p>
+            I also recently launched a course that covers everything you need to
+            build a web app with the Spotify API using Node & React.
+          </p>
           <p>Here are a few technologies I’ve been working with recently:</p>
           <Skills>
-            {
-              skills.map((skill, index) => {
-                return (<Skill key={`skills-${index}`}>{skill}</Skill>)
-              })
-            }
+            {skills.map((skill, index) => {
+              return <Skill key={`skills-${index}`}>{skill}</Skill>;
+            })}
           </Skills>
         </ContentText>
         <ContentPic>
           <PicContainer>
-            <img style={{width: 350, height: 350 }} src={require('../assets/profil-cartoon.jpg')} />
+            <img
+              style={{ width: 350, height: 350 }}
+              src={require("../assets/profil-cartoon.jpg")}
+            />
           </PicContainer>
-        
         </ContentPic>
       </MainContent>
     </Section>
-  )
-}
+  );
+};
 
-export default About
+export default About;
