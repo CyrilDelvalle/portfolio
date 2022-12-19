@@ -63,17 +63,17 @@ export const LinkAction = styled.a`
     text-decoration: none;
 
     &:hover {
-        color: ${Text.green500}
+        color: ${Text.green100}
     }
     &:focus {
-        color: ${Text.green500}
+        color: ${Text.green100}
     }
 `;
 
 export const Home = styled.a`
     width: 2.625rem;
     height: 2.625rem;
-    color: ${Text.green500};
+    color: ${Text.green100};
 `;
 
 export const Resume = styled.div`
@@ -82,9 +82,9 @@ export const Resume = styled.div`
 
 
 export const ResumeButton = styled.a`
-    color: ${Text.green500};
+    color: ${Text.green100};
     background-color: transparent;
-    border: 0.06rem solid  ${Text.green500};
+    border: 0.06rem solid  ${Text.green100};
     border-radius: .25rem;
     padding: 0.75rem 1rem;
     line-height: 1;

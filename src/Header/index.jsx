@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Container,
   Nav,
@@ -11,16 +11,18 @@ import {
   Resume,
   ResumeButton,
 } from "./style";
-import { AiFillHome } from "react-icons/ai";
+import { AiOutlineHome, AiFillHome } from "react-icons/ai";
 import { Link } from "react-scroll";
 
 const Header = () => {
+  const [hoverHome, setHoverHome] = useState(false);
+
   return (
     <Container>
       <Nav>
-        <Logo>
+        <Logo onMouseEnter={() => setHoverHome(true)} onMouseLeave={() => setHoverHome(false)} >
           <Home href="/">
-            <AiFillHome size={42} />
+            {hoverHome ? <AiFillHome size={42} /> : <AiOutlineHome size={42} />}
           </Home>
         </Logo>
         <Links>

@@ -85,7 +85,7 @@ export const Skill = styled.li`
         content: "▹";
         position: absolute;
         left: 0rem;
-        color: ${Text.green500};
+        color: ${Text.green100};
         font-size: ${FontSize.basic};
         line-height: .75rem;
     }

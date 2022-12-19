@@ -36,7 +36,7 @@ const History = () => {
         <List>
           {experiences.map(({ society }, index) => {
             return (
-              <ButtonContainer>
+              <ButtonContainer key={`button-${index}`}>
                 <ButtonIndicator isSelected={index === currentIndex} />
                 <ButtonHistory
                   onClick={() => setCurrentIndex(index)}
@@ -54,9 +54,9 @@ const History = () => {
               <PanelTitle>{jobTitle}</PanelTitle>
               <PanelLifeTime>{startDate + " - " + endDate}</PanelLifeTime>
               <PanelExperiencesContainer>
-                {tasks.map((task) => {
+                {tasks.map((task, index) => {
                   return (
-                    <PanelTask>
+                    <PanelTask key={`panel-experiences-${index}`}>
                       <PanelLogo>▹</PanelLogo>
                       <PanelExperience>{task}</PanelExperience>
                     </PanelTask>

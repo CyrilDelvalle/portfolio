@@ -30,9 +30,9 @@ export const Message = styled.p`
 `;
 
 export const Email = styled.a`
-    color: ${Text.green500};
+    color: ${Text.green100};
     background-color: transparent;
-    border: 0.06rem solid ${Text.green500};
+    border: 0.06rem solid ${Text.green100};
     border-radius: .25rem;
     padding: 1.25rem 1.75rem;
     font-size: ${FontSize.basic};
