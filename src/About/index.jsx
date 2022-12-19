@@ -26,24 +26,15 @@ const About = () => {
       <MainContent>
         <ContentText>
           <p>
-            Hello! My name is Brittany and I enjoy creating things that live on
-            the internet. My interest in web development started back in 2012
-            when I decided to try editing custom Tumblr themes — turns out
-            hacking together a custom reblog button taught me a lot about HTML &
-            CSS!
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
           <p>
-            Fast-forward to today, and I’ve had the privilege of working at an
-            advertising agency, a start-up, a huge corporation, and a
-            student-led design studio. My main focus these days is building
-            accessible, inclusive products and digital experiences at
-            Upstatement for a variety of clients.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
           <p>
-            I also recently launched a course that covers everything you need to
-            build a web app with the Spotify API using Node & React.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <p>Here are a few technologies I’ve been working with recently:</p>
+          <p>Lorem ipsum</p>
           <Skills>
             {skills.map((skill, index) => {
               return <Skill key={`skills-${index}`}>{skill}</Skill>;
@@ -53,6 +44,7 @@ const About = () => {
         <ContentPic>
           <PicContainer>
             <img
+              alt="cartoon"
               style={{ width: 350, height: 350 }}
               src={require("../assets/profil-cartoon.jpg")}
             />

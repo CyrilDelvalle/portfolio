@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Font, Text } from "../utils";
+import { Font, Text, FontSize, Transition } from "../utils";
 
 export const Section = styled.section`
   display: flex;
@@ -10,13 +10,13 @@ export const Section = styled.section`
   align-items: flex-start;
   min-height: 100vh;
   height: 100vh;
-  padding: 0px;
-  padding: 100px 150px 0px 150px;
+  padding: 0rem;
+  padding: 6.25rem 9.375rem 0rem 9.375rem;
 `;
 
 export const Title = styled.h2`
-font-size: clamp(40px, 5vw, 60px);
-margin: 0px 0px 10px;
+font-size: ${FontSize.title};
+margin: 0rem 0rem .625rem;
   font-weight: 600;
   color: ${Text.lightSlate};
   line-height: 1.1;
@@ -24,22 +24,22 @@ margin: 0px 0px 10px;
 
 export const Message = styled.p`
     color: ${Text.slate};
-font-family: ${Font.fontSans};
-font-size: 20px;
-line-height: 1.3;
+    font-family: ${Font.fontSans};
+    font-size: ${FontSize.big};
+    line-height: 1.3;
 `;
 
 export const Email = styled.a`
     color: ${Text.green500};
     background-color: transparent;
-    border: 1px solid ${Text.green500};
-    border-radius: 4px;
+    border: 0.06rem solid ${Text.green500};
+    border-radius: .25rem;
     padding: 1.25rem 1.75rem;
-    font-size: 14px;
+    font-size: ${FontSize.basic};
     font-family: ${Font.fontMono};
     line-height: 1;
     text-decoration: none;
     cursor: pointer;
-    transition:  all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-    margin-top: 50px;
+    transition: ${Transition.bezier};
+    margin-top: 3.125rem;
 `;

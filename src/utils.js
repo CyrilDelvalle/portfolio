@@ -17,3 +17,13 @@ export const Font = {
     fontMono: "'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace",
     fontSans: "'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif"
 }
+
+export const FontSize = {
+    title: "clamp(1.625rem,5vw,2rem)",
+    basic: "0.875rem",
+    big: "1.25rem"
+}
+
+export const Transition = {
+    bezier: "all 0.25s cubic-bezier(0.645,0.045,0.355,1)"
+}

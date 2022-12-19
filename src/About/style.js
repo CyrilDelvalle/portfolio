@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Font, Text } from "../utils";
+import { Font, FontSize, Text } from "../utils";
 
 export const Section = styled.section`
 display: flex;
@@ -10,8 +10,8 @@ flex-direction: column;
 align-items: flex-start;
 min-height: 100vh;
 height: 100vh;
-padding: 0px;
-padding: 100px 150px 0px 150px;
+padding: 0rem;
+padding: 6.25rem 9.375rem 0rem 9.375rem;
 `;
 
 export const Title = styled.h2`
@@ -19,9 +19,9 @@ display: flex;
 -moz-box-align: center;
 align-items: center;
 position: relative;
-margin: 10px 0px 40px;
+margin: .625rem 0rem 2.5rem;
 width: 100%;
-font-size: clamp(26px,5vw,32px);
+font-size: ${FontSize.title};
 white-space: nowrap;
 
 font-weight: 600;
@@ -30,13 +30,13 @@ line-height: 1.1;
 
 &:after{
     content: "";
-display: block;
-position: relative;
-top: 5px;
-width: 300px;
-height: 1px;
-margin-left: 20px;
-background-color: ${Text.grey100};
+    display: block;
+    position: relative;
+    top: .5rem;
+    width: 18.75rem;
+    height: 0.06rem;
+    margin-left: 1.25rem;
+    background-color: ${Text.grey100};
 }
 
 `;
@@ -64,30 +64,30 @@ export const ContentPic = styled.div`
 `;
 
 export const Skills = styled.ul`
-gap: 0px 10px;
-padding: 0px;
-overflow: hidden;
-list-style: none;
+    gap: 0rem .625rem;
+    padding: 0rem;
+    overflow: hidden;
+    list-style: none;
 
-display: grid;
-grid-template-columns: repeat(2, minmax(140px, 200px));
+    display: grid;
+    grid-template-columns: repeat(2, minmax(8.75rem, 12.5rem));
 `;
 
 export const Skill = styled.li`
-position: relative;
-margin-bottom: 10px;
-padding-left: 20px;
-font-family: ${Font.fontMono};
-font-size: 13px;
-color: ${Text.slate};
+    position: relative;
+    margin-bottom: .6rem;
+    padding-left: 1.25rem;
+    font-family: ${Font.fontMono};
+    font-size: ${FontSize.basic};
+    color: ${Text.slate};
 
     &:before {
         content: "▹";
         position: absolute;
-        left: 0px;
+        left: 0rem;
         color: ${Text.green500};
-        font-size: 14px;
-        line-height: 12px;
+        font-size: ${FontSize.basic};
+        line-height: .75rem;
     }
 `;
 
